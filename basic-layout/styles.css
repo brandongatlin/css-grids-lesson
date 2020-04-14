@@ -1,0 +1,35 @@
+#grid {
+    display: grid;
+    grid-template-rows: 20vh 50vh 20vh;
+    grid-template-areas: "header" "main" "footer";
+    text-align: center;
+    row-gap: 20px;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "article aside";
+    column-gap: 20px;
+}
+
+header {
+    background: lime;
+    grid-area: header;
+}
+
+article {
+    background: lightgray;
+    grid-area: article;
+}
+
+aside {
+    background: pink;
+    grid-area: aside;
+}
+
+footer {
+    background: coral;
+    grid-area: footer;
+}
