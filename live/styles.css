@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+
+div {
+    border: 1px solid black;
+    min-height: 100px;
+}
+
+.one {
+    background: lime;
+}
+
+.two {
+    background: yellow;
+}
+
+.three {
+    background: pink;
+}
+
+.four {
+    background: orange;
+}
+
+.five {
+    background: lightblue;
+}
+
+.six {
+    background: grey;
+}
+
+.seven {
+    background: lightcoral;
+}
+
+.eight {
+    background: azure;
+}
+
+.nine {
+    background: lightgoldenrodyellow;
+}
