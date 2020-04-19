@@ -1,0 +1,22 @@
+* {
+    min-height: 150px;
+}
+
+header {
+    background: lime;
+}
+
+article {
+    background: lightgray;
+    border: 5px solid blue;
+    /* margin-left: 1px; */
+    /* breaks the row spacing, and pushes next item to next row*/
+}
+
+aside {
+    background: pink;
+}
+
+footer {
+    background: coral;
+}
