@@ -4,6 +4,7 @@
     grid-template-areas: "header" "main" "footer";
     text-align: center;
     row-gap: 20px;
+    padding: 20px;
 }
 
 main {
@@ -12,6 +13,7 @@ main {
     grid-template-columns: 2fr 1fr;
     grid-template-areas: "article aside";
     column-gap: 20px;
+    row-gap: 20px;
 }
 
 header {
@@ -32,4 +34,11 @@ aside {
 footer {
     background: coral;
     grid-area: footer;
+}
+
+@media (max-width: 650px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: "article" "aside";
+    }
 }

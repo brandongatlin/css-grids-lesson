@@ -2,6 +2,15 @@ body {
     text-align: center;
 }
 
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "one two three four five" "six seven eight . nine";
+    row-gap: 10px;
+    column-gap: 25px;
+}
+
 div {
     border: 1px solid black;
     min-height: 100px;
@@ -9,36 +18,59 @@ div {
 
 .one {
     background: lime;
+    grid-area: one;
+    /* margin-left: 300px; */
+    /* border: 25px dotted blue; */
 }
 
 .two {
     background: yellow;
+    grid-area: two;
 }
 
 .three {
     background: pink;
+    grid-area: three;
 }
 
 .four {
     background: orange;
+    grid-area: four;
 }
 
 .five {
     background: lightblue;
+    grid-area: five;
 }
 
 .six {
     background: grey;
+    grid-area: six;
 }
 
 .seven {
     background: lightcoral;
+    grid-area: seven;
 }
 
 .eight {
     background: azure;
+    grid-area: eight;
 }
 
 .nine {
     background: lightgoldenrodyellow;
+    grid-area: nine;
+}
+
+@media (max-width: 600px) {
+    #grid {
+        /* background: orange; */
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "one" "three" "four" "five" "six" "seven" "eight" "nine" "nine";
+    }
+    .two {
+        display: none;
+    }
 }
